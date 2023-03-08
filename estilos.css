@@ -1,0 +1,677 @@
+@font-face {
+    font-family: "KaushanScript";
+    src: url("fonts/KaushanScript-Regular.ttf");
+    font-weight: normal;
+    font-size: normal;    
+}
+
+@font-face {
+    font-family: "websymbols-regular";
+    src: url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("fonts/websymbols-regular-webfont.ttf") format("truetype"),
+    url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+}
+
+/*Generales*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.limpiar {
+    clear: both;
+    float: none;
+}
+
+.icon {
+    font-family: "websymbols-regular";
+}
+
+body {
+    background: url("img/arena.jpg");
+}
+
+.contenedor {
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.contain {
+    width: 96%;
+    margin: 0px auto;
+}
+
+
+#cabecera {
+    width: 100%;
+    height: 82px;
+    background: url("img/footer.jpg");
+    font-family: "Verdana, Geneva, Tahoma, sans-serif";
+    color:#022e27 
+}
+
+#menu_cabecera {    
+    float: right;
+    width: auto;
+    height: 70px;
+    background: transparent;
+    margin-right: 2.5%;
+}
+
+
+#menu_cabecera ul li {
+    font-size: 24px;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+
+#menu_cabecera ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+
+#menu_cabecera ul li a:hover {
+    color: yellowgreen;
+    transform: scale(1.2, 1.2);
+}
+
+
+
+#logotipo {
+    display: block;
+    float: left;
+    width: 78px;
+    height: 73px;
+    background-color: #00002F;
+    margin-top: 4px;
+    margin-left: 6%;    
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 70px;
+    box-shadow: 1px 1px 1px orange, 1px 2px 2px #d43131, 
+    2px 3px 3px #ffc400, -1px 1px 1px #ffc400, 1px 1px 1px #fefe36 inset;    
+    
+}
+
+
+.logotype {
+    display: block;
+    float: left;
+    width: 98px;
+    height: 65px;
+}
+
+#logotipo h3 {
+    display: block;
+    float: right;
+    margin-right: 55px;
+    letter-spacing: 1px;
+    color: #adff2f;
+    font-size: 40px;
+    margin-top: -56px;
+    margin-right: 85px;
+    animation-name: rotarCartel;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotarCartel {
+    0%{
+        transform: translateX(200%);
+        color: transparent;
+    }
+    25%{
+        color: transparent;
+    }
+
+    50%{
+        transform: translateX(0%);
+        color: transparent;
+    }
+    75%{
+        color: #adff2f;
+    }   
+    100%{
+        transform: translateX(200%);
+        color: #adff2f;
+    }
+} 
+
+
+/*Banner*/
+
+#banner {
+    width: 95%;
+    height: 150px;
+    margin: 0px auto;
+    background: url("img/madre_nene.jpg");
+    background-position: -2041px 2161px;
+    font-family: "KaushanScript";
+    color: white;
+    border: 2px solid #682626;
+    border-top-style: none;
+    border-radius: 0px 0px 5px 180px;
+    overflow: hidden;
+    animation: backimg 15s linear;
+}
+
+
+@keyframes backimg {
+    0% {
+        background-position: -2041px 1190px;
+    }
+    100%{
+        background-position: -2041px 2161px;
+    }
+}
+
+
+#banner h1 {
+    font-size: 40px;
+    animation: mostrarNombre 15s linear;
+}
+
+@keyframes mostrarNombre {
+    0%{
+        transform: translateY(-400%);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(400%);
+        opacity: 1;
+    }
+    75%{
+        transform: translateY(-400%);
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        color:white;
+        opacity: 1;
+    }
+}    
+
+
+#banner h2 {
+    font-size: 25px;
+}
+
+#organizacion a, #ayuda a{
+    color: white;
+    text-decoration: none;
+}
+
+#data {
+    display: block;
+    float: left;
+    margin-left: 6%;
+    margin-top: 1.333%;    
+}
+
+#contacto {
+    display: block;
+    float: right;
+    margin-right: 12%;
+    margin-top: 1.333%;
+}
+
+#contacto h3 {
+    margin-bottom: 10px;
+}
+
+#contacto li {
+    padding: 2px;
+    list-style-type: none;
+}
+
+#contacto li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/*Barra lateral*/
+
+
+#barra {
+    width: 300px;
+    min-height: 900px;
+    float: left;
+    margin-left: 1%;
+    margin-top: 50px;
+    font-family: "KaushanScript";
+    color:#682626;
+    border: 1px solid #87510b;
+    border-radius: 10px;
+    box-shadow: -1px 1px 3px brown;
+    background: url(img/arena2.jpg);
+}
+
+#postulante{
+    display: block;
+    margin: 0px auto;
+    width: 90%;
+    margin-top: 10px;
+    opacity: 0.3;
+    transition: all 500ms;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#postulante:hover {
+    opacity: 1;
+}
+
+#info li {
+    list-style-type: none;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+#info li a {
+    text-decoration: none;
+    color: #87510b;
+    font-size: 23px;
+    transition: all 200ms;
+}
+
+#info input[type="button"]{
+    font-family: "KaushanScript";
+    background-color: transparent;
+    color: #87510b;
+    font-size: 23px;
+    border: none;
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+
+#info a:hover, #info #habilidades:hover{
+    color: #682626;
+    text-shadow: 0px 1px 2px #87510b, 0px 2px 2px #87510b, 0px 3px 2px #87510b;
+    margin-left: 50px;
+}
+
+.caja_barra {
+    width: 90%;
+    min-height: 250px;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 10px;
+    background: url("img/madera.jpg");
+    border: 1px solid #87510b;
+    border-radius: 10px;
+    box-shadow: -1px 1px 3px brown;
+}
+
+#barra #datos_personales {
+    background: url("img/madera.jpg");
+    background-position: 98px 356px;
+    color:#682626; 
+}
+
+#barra #login {
+    background: url("img/madera.jpg");
+    background-position: 100px 325px;
+}
+
+#showList {
+    display: block;
+    width:100%;
+    height: auto;
+    font-family: "KaushanScript";
+    margin: 0px auto;
+    background: transparent;
+    border: none;
+}
+
+#titulo_datos{
+    width: 90%;
+    background-color: transparent;
+    margin: 18px auto;
+    font-size: 28px;
+    color: #682626;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 250ms;    
+}
+
+#titulo_datos:hover{
+    color: white;
+    text-shadow: -1px -1px 1px #87510b, -1px -2px 2px #87510b, 
+    -1px -3px 3px #87510b, -1px 2px 3px #87510b;
+    cursor: pointer;    
+}
+
+
+#lista_datos li{
+    list-style: none;
+    margin-bottom: 26px;
+    font-size: 17px;    
+}
+
+#lista_datos li a{
+    text-decoration: none;
+    color:#682626;
+}
+
+/*Efecto sobre los datos personales*/
+.oculto {
+    display: none;
+}
+
+#login h5 {
+    width: 100%;
+    margin: 0px auto;
+    color: #d2f6ea;;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 1px;
+    background:linear-gradient(to bottom,  #087968 0%, #02695a 100%);
+    padding-bottom: 5px; 
+    border: 1px solid #056456;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.loguear {
+    width: 100%;
+}
+
+#user, #password {
+    display:block;    
+    margin: 0px auto;
+}
+
+#user {
+    font-size: 18px;
+    width: 90%;
+    margin-left: 4%;
+}
+
+#password {
+    font-size: 20px;
+    width: 92%;
+    margin-left: 7%;
+}
+
+
+#log, #clave {
+    display: inline-block;    
+    height: 20px;
+    padding-left: 5px;
+    margin-top: 15px;
+    color: #9f9b9b;
+    font-style: italic;
+}
+#log {
+    width: 84%;
+    margin-left: 0.5%;
+}
+
+#clave {
+    width: 82%;
+}
+
+#log:focus, #clave:focus {
+    color: #3a3d3e;
+    font-style: normal;
+    background-color: #d2f6ea;    
+}
+
+#botones {
+    margin-top: 15px;
+}
+
+#entrar, #resetear {
+    display: block;
+    width: 40%;
+    height: 30px;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom,  #087968 0%, #02695a 100%);
+    text-align: center;
+    color: #d2f6ea;
+    font-family: "Verdana, Geneva, Tahoma, sans-serif";
+    font-weight: lighter;
+    font-size: 15px;
+    border: 1px solid #056456;
+    border-radius: 0px;
+    transition: all 400ms;
+}
+
+#entrar {
+    float: left;
+    margin-left: 6%;
+    margin-top: 4.5%;
+}
+
+#resetear {
+    float: right;
+    margin-right: 6%;
+    margin-top: 4.5%;
+}
+
+
+#entrar:hover, #resetear:hover {
+    box-shadow: -1px 1px 2px #087968, 1px 2px 2px greenyellow;
+    font-weight: bold; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#login a {
+    width: 54%;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 4%;
+    font-size: 17px;
+    color:#022e27; 
+    margin-top: 2px;
+    padding-bottom: 5px;
+}
+
+/*Fin barra lateral*/
+
+/*Contenido central*/
+
+#resumen {
+    display: block;
+    float: left;
+    width: 65%;
+    margin: 50px 50px 40px 40px; 
+    font-family: "KaushanScript";
+    color: #682626;
+}
+
+#resumen h4 {
+    font-size: 24px;
+    border-bottom: 2px solid #87510b;
+}
+
+.presentacion {
+    margin-bottom: 30px;
+    font-family: "KaushanScript";
+    color: #682626;
+}
+
+.presentacion p, article {
+    padding: 10px;
+}
+
+.datos {
+    width: 100%;
+    height: 30px;
+    background: url("img/footer.jpg");
+    background-position: 10px 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;    
+}
+
+.lista {
+    margin-top: 20px;
+}
+
+.fecha, .empresa {
+    padding: 6px;
+    line-height: 30px;
+    margin-right: 15px;
+}
+
+.descripcion h5 {
+    font-size: 20px;
+}
+
+
+.descripcion li {
+    margin-left: 30px;
+    list-style:square;  
+}
+
+
+
+/*Pie de página*/
+
+.pie {
+    width: 100%;
+    min-height: 70px;
+    height: auto;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 70px;
+    background: url("img/footer.jpg");     
+}
+
+.pie a, .pie p {
+    text-decoration: none;
+    font-family: "Verdana, Geneva, Tahoma, sans-serif";
+    font-weight: normal;
+    color: antiquewhite;  
+}
+
+.pie a:hover {
+    text-decoration: underline;
+}
+
+/*css de la solicitud de ingreso*/
+
+#titulos {
+    height: 200px;
+}
+
+#titulos h1 {
+    width: 66.6%;
+    margin: 0px auto;   
+    text-align: center;
+    font-size: 36px;
+}
+
+#titulos h2 {
+    width: 66.6%;
+    margin: 0px auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+
+#tabla_registro {
+    width: 535px;
+    min-height: 350px;
+    margin: 0px auto;
+    border: 10px solid #682626;
+}
+
+.registro {
+    height: 70px;
+}    
+
+.campo{
+    float: right;
+    width: 250px;
+    height: 30px;
+    margin-right: 10px;
+    color: #9f9b9b;
+    font-size: 14px;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+.campo:focus {
+    color: #3a3d3e;
+    font-style: normal;
+    background-color: #d2f6ea;
+}
+
+
+
+#data_nacimiento, #documento {
+    width: 247px;
+}
+
+.etiqueta_form {
+    padding: 5px;
+}
+
+tr td {
+    height: 50px;
+}
+
+td label {
+    font-size: 18px;
+}
+
+#aclaracion {
+    display: block;
+    font-size: 12px;
+    float: right;
+    padding: 0px;
+    border-top: 3px;
+
+}
+
+#campo_genero,#terminos {
+    text-align: center;
+}
+
+#add, #reset {
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to bottom,  #087968 0%, #02695a 100%);
+    text-align: center;
+    color: #d2f6ea;
+    font-family: "Verdana, Geneva, Tahoma, sans-serif";
+    font-weight: lighter;
+    font-size: 15px;
+    border: 1px solid #056456;
+    border-radius: 0px;
+    transition: all 400ms;
+}
+
+#add:hover, #reset:hover {
+    box-shadow: -1px 1px 2px #087968, 1px 2px 2px greenyellow;
+    font-weight: bold; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#foot {
+    height: 200px;
+}
+

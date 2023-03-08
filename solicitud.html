@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="icon" type="favicon/x-icon" href="img/iconito.png">
+    <title>Solicitud de ingreso</title>
+</head>
+
+
+<body id="datos_contacto">
+    <header id="cabecera">
+        <div class="contenedor">
+            <div id="logotipo">
+                <a href="https://www.greenpeace.org/argentina/" target="_blank" title="Greenpeace Argentina"><img
+                        src="img/tierra.gif" class="logotype" alt="Tierra" /></a>
+                <div class="limpiar"></div>
+                <a href="https://www.greenpeace.org/argentina/" target="_blank" title="Greenpeace Argentina">
+                    <h3>Help!</h3>
+                </a>
+            </div>
+
+            <nav id="menu_cabecera">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="https://www.animalpolitico.com/analisis/organizaciones/el-blog-de-msf" target="_blank">BLOG</a></li>
+                    <li><a href="https://www.msf.org.ar/colabora-nosotros/campana-sensibilizacion" target="_blank">CAMPAÑAS</a></li>
+                    <li><a href="ayuda.html" target="_blank">LINKS DE INTERÉS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="cuerpo_form" class="contenedor">
+        <section class="presentacion">
+
+            <div id="titulos" class="wrap-contenedor-flotado">
+                <h1>Asociate a nuestra causa y comenzá una aventura de vida ayudando a quienes más lo necesitan</h1>
+                <h2>Completa tus datos y nos pondremos en contacto contigo</h2>
+            </div>
+
+            <div id="area_datos" class="contenedor">
+                <form action="" method="post">
+
+                    <table id="tabla_registro" aria-colcount="2" border="1">
+
+
+                        <tr id="registro_nombre_apellido" class="registro">
+                            <td id="campo_nombre">
+                                <label class="etiqueta_form" for="nombre">Nombre</label>
+                                <input type="search" class="campo" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
+                            </td>
+
+
+                            <td id="campo_apellido">
+                                <label class="etiqueta_form" for="apellido">Apellido</label>
+                                <input type="search" class="campo" id="apellido" name="apellido" placeholder="Ingresá tu apellido"
+                                    required>
+                            </td>
+                        </tr>
+
+
+                        <tr id="registro_genero" class="registro">
+                            <td id="campo_genero"><input type="radio" id="femenino" name="genero" value="Femenino">
+                                <label for="femenino">Femenino</label>
+
+                                <input type="radio" id="masculino" name="genero" value="Masculino">
+                                <label for="masculino">Masculino</label>
+
+                                <input type="radio" id="otro" name="genero" value="Otro">
+                                <label for="otro">Otro</label>
+                            </td>
+
+                            <td id="campo_documento">
+                                <label class="etiqueta_form" for="documento">Número de documento</label>
+                                <input type="number" class="campo" id="documento" name="documento">
+                            </td>
+                        </tr>
+
+                        <tr id="registro_mail" class="registro">
+                            <td id="campo_mail">
+                                <label class="etiqueta_form" for="correo">Email</label>
+                                <input type="email" class="campo" id="correo" name="mail">
+                            </td>
+
+                            <td id="campo_nacimiento">
+                                <label for="data_nacimiento">Fecha de nacimiento</label>
+                                <input type="date" class="campo" id="data_nacimiento" name="data_nacimiento" placeholder="DD/MM/AAAA">
+                                <!--<span class="aclaracion">
+                                    <p id="aclaracion" class="texto_aclaracion">Ejemplo: 18/12/2022</p>
+                                </span>-->
+                            </td>
+                        </tr>
+
+                        <tr id="admitir" class="registro">
+                            <td>
+                                <input id="add" type="submit" value="Enviar" />
+                            </td>
+                            <td>
+                                <input id="reset" type="reset" value="Limpiar" />
+                            </td>
+                        </tr>
+
+                        <tr class="terminos">
+                            <td colspan="2">
+                                <p id="terminos">Al continuar acepto <a href="#">Términos y Condiciones</a> sobre el
+                                    tratamiento
+                                    de
+                                    datos
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <footer id="foot" class="pie">
+        <p>
+            Página desarrollada por Gustavo Alejandro Pantano &copy;
+        </p>
+
+    </footer>
+
+</body>
+
+
+</html>
